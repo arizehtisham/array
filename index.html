@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>
+array
+        </title>
+    </head>
+    <body>
+<p>
+    how to declare the array?
+    <h4 id="declare"></h4> 
+</p>
+<hr>
+<p>
+    how to fetch the first element of the array?
+    <h4 id="first"></h4> 
+</p>
+<hr>
+<p>
+    how to fetch the 2nd element of the array?
+    <h4 id="second"></h4> 
+</p>
+<hr>
+<p>
+    how to fetch the 3rd element of the array?
+    <h4 id="third"></h4> 
+</p>
+<hr>
+<p>
+    how to get the length of the array?
+    <h4 id="length"></h4> 
+</p>
+<hr>
+<p>
+    how to loop the array?
+    <h4 id="loop"></h4> 
+</p>
+<hr>
+<p>
+    how to add element at the end of the array?
+    <h4 id="end"></h4> 
+</p>
+<hr>
+<p>
+    how to add one more element at the end of the array?
+    <h4 id="more"></h4> 
+</p>
+<hr>
+<p>
+    how to declare the array with alphabets?
+    <h4 id="alp"></h4> 
+</p>
+<hr>
+<p>
+    how to sort the array with alphabets?
+    <h4 id="sort"></h4> 
+</p>
+<hr>
+<p>
+    how to reverse the array with alphabets?
+    <h4 id="reverse"></h4> 
+</p>
+<hr>
+<p>
+    how to declare the array with numbers?
+    <h4 id="num"></h4> 
+</p>
+<hr>
+<p>
+    how to find maximum number from array?
+    <h4 id="max"></h4> 
+</p>
+<hr>
+<p>
+    how to find minimum number from array?
+    <h4 id="min"></h4> 
+</p>
+<hr>
+    </body>
+    <script>
+        var fruits=["mango","banana","apple"];
+        console.log(fruits);
+        document.getElementById("declare").innerHTML=fruits;
+        var first1=fruits[0];
+        console.log(first1);
+        document.getElementById("first").innerHTML=first1;
+        var first2=fruits[1];
+        console.log(first2);
+        document.getElementById("second").innerHTML=first2;
+        var first3=fruits[2];
+        console.log(first3);
+        document.getElementById("third").innerHTML=first3;
+        var length1=fruits.length;
+        console.log(length1);
+        document.getElementById("length").innerHTML=length1;
+        var array="";
+        for(i=0;i<fruits.length;i++)
+        {
+            console.log(fruits[i]);
+            array=array+fruits[i]+"<br>";
+        }
+        document.getElementById("loop").innerHTML=array;
+        fruits.push("orange");
+        console.log(fruits);
+        document.getElementById("end").innerHTML=fruits;
+        fruits.push("cherry");
+        console.log(fruits);
+        document.getElementById("more").innerHTML=fruits;
+        var a=["h","k","w","F","a"];
+        console.log(a);
+        document.getElementById("alp").innerHTML=a;
+        a.sort();
+        console.log(a);
+        document.getElementById("sort").innerHTML=a;
+        a.reverse();
+        console.log(a);
+        document.getElementById("reverse").innerHTML=a;
+        var n=["6","9","0","7","1"];
+        console.log(n);
+        document.getElementById("num").innerHTML=n;
+        var max1=Math.max.apply(Math,n);
+        console.log(max1);
+        document.getElementById("max").innerHTML=max1;
+        var min1=Math.min.apply(Math,n);
+        console.log(min1);
+        document.getElementById("min").innerHTML=min1;
+    </script>
+</html>
